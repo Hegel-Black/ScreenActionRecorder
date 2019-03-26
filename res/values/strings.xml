@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ScreenRecorder</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">关于</string>
+    <string name="toast_about">V0.1\n早睡早起，锻炼身体！</string>
+    
+    <string name="def_hint">点击按钮查询相关信息</string>
+    <string name="query_all">查询全部</string>
+    <string name="query_screen_on">查询开屏时间</string>
+    <string name="query_screen_off">查询关屏时间</string>
+    <string name="query_screen_unlock">查询解锁时间</string>
+
+</resources>
