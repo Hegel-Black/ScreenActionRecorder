@@ -11,12 +11,12 @@ public class MyScreenDbHelper extends SQLiteOpenHelper {
     public static final int DATABASE_VERSION = 1;
     public static final String DATABASE_NAME = "my_screen_action.db";
     
-    private static final String SQL_CREATE_ENTRIES = "CREATE TABLE " + DBConst.TABLE_SCREEN_ACTION + " ("
+    private static final String SQL_CREATE_ENTRIES = "CREATE TABLE IF NOT EXISTS " + DBConst.TABLE_SCREEN_ACTION + " ("
             + DBConst.COLUMN_MAIN + " INTEGER PRIMARY KEY AUTOINCREMENT,"
             + DBConst.COLUMN_SCREEN_TYPE + " VARCHAR(50),"
             + DBConst.COLUMN_DATE_TIME + " VARCHAR(50))";
     
-    private static final String SQL_DELETE_ENTRIES = "DROP TABLE " + DBConst.TABLE_SCREEN_ACTION;
+    private static final String SQL_DELETE_ENTRIES = "DROP TABLE IF EXISTS " + DBConst.TABLE_SCREEN_ACTION;
 
     public MyScreenDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
